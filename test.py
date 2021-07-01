@@ -1,7 +1,5 @@
 import pandas_datareader as web
 
-
-
 # name
 # date
 # amount invested
@@ -51,7 +49,7 @@ while True:
         portfolio_value = amount_invested * (1 + change)
         print("amount invested:", amount_invested)
         print("portfolio value:", portfolio_value)
-        print("profit:", portfolio_value - amount_invested, "("+ str(round(change * 100, 2)) +"%)")
+        print("profit/loss:", portfolio_value - amount_invested, "("+ str(round(change * 100, 2)) +"%)")
         print("")
 
     elif (option == "Delete"):
